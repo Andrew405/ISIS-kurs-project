@@ -1,5 +1,8 @@
+fastapi
+uvicorn
 pandas
 numpy
 scipy
-matplotlib
 openpyxl
+python-multipart
+pydantic

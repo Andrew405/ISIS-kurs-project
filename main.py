@@ -1,14 +1,29 @@
-from analyzer import analyze_file
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+
+from api.routes import router
 
 
-def main():
-    path = input("Введите путь к Excel файлу: ").strip()
-
-    try:
-        analyze_file(path)
-    except Exception as e:
-        print(f"Ошибка: {e}")
+app = FastAPI(
+    title="Deviator API"
+)
 
 
-if __name__ == "__main__":
-    main()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+app.include_router(router)
+
+
+app.mount(
+    "/",
+    StaticFiles(directory="frontend", html=True),
+    name="frontend"
+)

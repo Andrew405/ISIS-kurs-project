@@ -1,0 +1,63 @@
+body {
+    background: #f4f7fc;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+.header {
+    background: linear-gradient(135deg, #0b3b5f, #1b4f72);
+    color: white;
+    padding: 1.2rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: all 0.2s;
+    margin-bottom: 25px;
+}
+.card-header {
+    background: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #e9ecef;
+    padding: 1rem 1.5rem;
+    border-radius: 20px 20px 0 0 !important;
+}
+.stat-value {
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    color: #0a58ca;
+}
+.upload-area {
+    border: 2px dashed #9aaebf;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    background: #ffffffcc;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.upload-area:hover {
+    background: #eef2f7;
+    border-color: #0b5ed7;
+}
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+.btn-primary {
+    background: #1f6392;
+    border: none;
+    border-radius: 40px;
+    padding: 8px 24px;
+    font-weight: 500;
+}
+.btn-primary:hover {
+    background: #0b4f7a;
+}
+.table thead th {
+    background: #eef2fa;
+}
